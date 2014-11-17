@@ -43,7 +43,9 @@
 			'routing' => ''
 		), $atts);
 		
-		return '<script src="https://embed-' . $a['op_id'] . '.secondstreetapp.com/Scripts/dist/embed.js" data-ss-embed="promotion" data-opguid="' . $a['op_guid'] . '" data-routing="' . $a['routing'] . '"></script>';
+		$ss_script_url = 'https://embed-' . $a['op_id'] . '.secondstreetapp.com/Scripts/dist/embed.js';
+
+		return '<script src="' . esc_url( $ss_script_url ) . '" data-ss-embed="promotion" data-opguid="' . esc_attr( $a['op_guid'] ) . '" data-routing="' . esc_attr( $a['routing'] ) . '"></script>';
 	
 	}
 	add_shortcode( 'ss_promo', 'ss_promo_func' );
