@@ -30,10 +30,10 @@ defined( 'ABSPATH' ) or die( "Access Forbidden" );
 defined( 'ABSPATH' ) or die( "Access Forbidden" ); // Blocks direct access to plugin
 
 // Define Second Street Plugin
-define( 'SECONDSTREET_PLUGIN', '1.0' );
+define( 'SECONDSTREET_PLUGIN_VERSION', '1.0' );
 define( 'SECONDSTREET_PLUGIN__MINIMUM_WP_VERSION', '3.1' );
 define( 'SECONDSTREET_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define( 'SECONDSTREET_PLUGIN', plugin_dir_path( __FILE__ ) );
+define( 'SECONDSTREET_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 
 // [ss-promo] Code
 function ss_promo_func( $atts, $content = null ) {
