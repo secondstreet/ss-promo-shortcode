@@ -48,4 +48,4 @@ function ss_promo_func( $atts, $content = null ) {
 	return '<script src="' . esc_url( $ss_script_url ) . '" data-ss-embed="promotion" data-opguid="' . esc_attr( $a['op_guid'] ) . '" data-routing="' . esc_attr( $a['routing'] ) . '"></script>';
 
 }
-add_shortcode( 'ss_promo', 'ss_promo_func' );
+add_shortcode( 'ss-promo', 'ss_promo_func' );
