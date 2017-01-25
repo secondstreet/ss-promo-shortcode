@@ -2,7 +2,7 @@
 Contributors: Second Street (Heather McCarron)
 Tags: Page, Post, Shortcode, Promotion, Second Street, UPICKEM
 Requires at least: 3.0
-Tested up to: 4.0
+Tested up to: 4.7
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,7 +24,7 @@ NOTE: The embedded Promotion's width will be dependent on the size of the parent
    to the `/wp-content/plugins/` directory.
 3. Activate the plugin through the 'Plugins' menu in WordPress.
 4. Retrieve (copy) your Promotion's Shortcode from your Second Street Partner Tool. 
-   (Login to your Second Street account at https://affiliates.upickem.net) 
+   (Login to your Second Street account at https://partners.secondstreet.com/) 
 5. Place (paste) your Shortcode into the page content area in your WordPress site. 
 
 
