@@ -49,3 +49,28 @@ function ss_promo_func( $atts, $content = null ) {
 
 }
 add_shortcode( 'ss-promo', 'ss_promo_func' );
+
+// [ss-signup] Code
+function ss_signup_func( $atts, $content = null ) {
+	$a = shortcode_atts( array (
+			'audience_id' => '',
+			'design_id' => '',
+			'text_header' => '',
+			'text_subheader' => '',
+			'text_label' => '',
+			'text_button' => '',
+			'text_thanks' => '',
+			'image_src' => '',
+			'color' => '',
+			'color_contrast' => '',
+			'font' => ''
+		), $atts );
+
+	$ss_script_url = 'https://embed.secondstreetapp.com/Scripts/dist/optin.js';
+
+	return '<script src="' . esc_url( $ss_script_url ) . '" data-ss-optin="embed" data-audience-id="' . esc_attr( $a['audience_id'] ) . '" data-design-id="' . esc_attr( $a['design_id'] ) . '" data-text-header="' . esc_attr( $a['text_header'] ) . '" data-text-subheader="' . esc_attr( $a['text_subheader'] ) . '" data-text-label="' . esc_attr( $a['text_label'] ) . '" data-text-button="' . esc_attr( $a['text_button'] ) . '" data-text-thanks="' . esc_attr( $a['text_thanks'] ) . '" data-image-src="' . esc_attr( $a['image_src'] ) . '" data-color="' . esc_attr( $a['color'] ) . '" data-color-contrast="' . esc_attr( $a['color_contrast'] ) . '" data-font="' . esc_attr( $a['font'] ) . '"></script>';
+
+}
+
+add_shortcode( 'ss-promo', 'ss_promo_func' );
+add_shortcode( 'ss-signup', 'ss_signup_func' );
